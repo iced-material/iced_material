@@ -8,7 +8,10 @@ authors.workspace = true
 license.workspace = true
 
 [features]
+default = ["x11", "wayland"]
 roboto = []
+x11 = ["iced/x11"]
+wayland = ["iced/wayland"]
 
 [dependencies]
 iced = { workspace = true, features = ["advanced", "canvas", "svg"] }

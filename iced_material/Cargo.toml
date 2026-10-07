@@ -1,0 +1,24 @@
+[package]
+name = "iced_material"
+description = "Material Design 3 widgets and theming for Iced"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[features]
+roboto = []
+
+[dependencies]
+iced = { workspace = true, features = ["advanced", "canvas", "svg"] }
+serde_json.workspace = true
+unicode-segmentation = "1"
+
+[dev-dependencies]
+iced = { workspace = true, features = ["advanced", "wgpu", "tiny-skia", "x11", "wayland", "thread-pool", "web-colors", "crisp"] }
+iced_runtime = "0.14.0"
+
+[[example]]
+name = "minimal"
+required-features = ["roboto"]

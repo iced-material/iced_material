@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["iced_material", "gallery"]
+members = ["material-iced", "gallery"]
 
 [workspace.package]
 version = "0.1.0"

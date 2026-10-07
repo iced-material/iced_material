@@ -22,7 +22,7 @@ The gallery has one page per group of components. It is the quickest way to look
 cargo test
 ```
 
-The tests render widgets without a window on `tiny-skia`, send events to them and read pixels back. A test that needs a new kind of input or a measurement belongs in `iced_material/tests/common/mod.rs`, next to the helpers the other tests use.
+The tests render widgets without a window on `tiny-skia`, send events to them and read pixels back. A test that needs a new kind of input or a measurement belongs in `material-iced/tests/common/mod.rs`, next to the helpers the other tests use.
 
 - `ICED_MATERIAL_BACKEND=wgpu cargo test` runs the same tests on `wgpu`. `tests/renderers.rs` compares both renderers on one scene.
 - `cargo test -p gallery` opens every page of the gallery, drives it with random input and opens every overlay. These tests take a few minutes.
@@ -32,10 +32,10 @@ The tests render widgets without a window on `tiny-skia`, send events to them an
 The color code is compared against vectors generated from the Java reference. To regenerate them:
 
 ```
-tools/vectors/generate.sh <path to material-color-utils> iced_material/tests/data
+tools/vectors/generate.sh <path to material-color-utils> material-iced/tests/data
 ```
 
-The Material Symbols in `iced_material/icons` are fetched with `tools/icons/fetch.sh <directory> <symbol name>...`.
+The Material Symbols in `material-iced/icons` are fetched with `tools/icons/fetch.sh <directory> <symbol name>...`.
 
 ## Format and lint
 

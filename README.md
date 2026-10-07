@@ -35,7 +35,7 @@ Add the crate and Iced to `Cargo.toml`. The `roboto` feature embeds the Roboto f
 ```toml
 [dependencies]
 iced = "0.14"
-material-iced = { path = "../iced_material", features = ["roboto"] }
+material-iced = { path = "../material-iced", features = ["roboto"] }
 ```
 
 Every widget takes the theme when it is built. Wrap the root of a view in `focus_scope` to get Tab and Shift+Tab traversal.
@@ -107,7 +107,7 @@ fn main() -> iced::Result {
 }
 ```
 
-The same program is `iced_material/examples/minimal.rs`.
+The same program is `material-iced/examples/minimal.rs`.
 
 A theme is built from a source color:
 
@@ -150,4 +150,4 @@ Iced 0.14 has no screen reader support, so the widgets have none.
 
 ## License
 
-GNU Lesser General Public License, version 3 only. The license texts are in `COPYING.LESSER` and `COPYING`. The bundled icons are under the Apache License 2.0 (`iced_material/icons/LICENSE`) and the fonts under the SIL Open Font License (`iced_material/fonts/OFL.txt`).
+GNU Lesser General Public License, version 3 only. The license texts are in `COPYING.LESSER` and `COPYING`. The bundled icons are under the Apache License 2.0 (`material-iced/icons/LICENSE`) and the fonts under the SIL Open Font License (`material-iced/fonts/OFL.txt`).

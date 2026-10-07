@@ -7,10 +7,10 @@ use std::time::Duration;
 use common::{Harness, distance, ink, rgb, solid};
 use iced::widget::{Space, container};
 use iced::{Color, Length, Point, Rectangle, Size};
-use iced_material::widget::transition::{
+use material_iced::widget::transition::{
     Axis, container_transform, fade, fade_through, shared_axis,
 };
-use iced_material::{Element, Theme};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

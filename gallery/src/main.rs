@@ -9,16 +9,16 @@ mod smoke;
 use iced::time::Instant;
 use iced::widget::{column, container, row, scrollable};
 use iced::{Color, Element, Font, Length, Subscription, Task, system, theme, window};
-use iced_material::color::{ColorScheme, SchemeOptions, SpecVersion, Variant, matugen};
-use iced_material::motion::Transition;
-use iced_material::theme::ColorTransition;
-use iced_material::widget::focus_scope;
-use iced_material::widget::transition::fade_through;
-use iced_material::{Theme, font};
+use material_iced::color::{ColorScheme, SchemeOptions, SpecVersion, Variant, matugen};
+use material_iced::motion::Transition;
+use material_iced::theme::ColorTransition;
+use material_iced::widget::focus_scope;
+use material_iced::widget::transition::fade_through;
+use material_iced::{Theme, font};
 
 fn main() -> iced::Result {
     let mut app = iced::application(Gallery::new, Gallery::update, Gallery::view)
-        .title("iced_material gallery")
+        .title("material-iced gallery")
         .theme(Gallery::theme)
         .subscription(Gallery::subscription)
         .default_font(Font::with_name("Roboto"))

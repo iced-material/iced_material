@@ -8,20 +8,20 @@ use common::{Harness, distance, ink, key, rgb, run, type_text};
 use iced::keyboard::key::Named;
 use iced::widget::{Space, container, row};
 use iced::{Length, Point, Rectangle, Size};
-use iced_material::icon::symbol;
-use iced_material::state::overlay;
-use iced_material::widget::focus_scope;
-use iced_material::widget::navigation::{
+use material_iced::icon::symbol;
+use material_iced::state::overlay;
+use material_iced::widget::focus_scope;
+use material_iced::widget::navigation::{
     Badge, Destination, Labels, navigation_bar, navigation_rail,
 };
-use iced_material::widget::navigation_drawer::{
+use material_iced::widget::navigation_drawer::{
     DrawerItem, modal_drawer, navigation_drawer, section,
 };
-use iced_material::widget::search::search;
-use iced_material::widget::side_sheet::side_sheet;
-use iced_material::widget::tabs::{Tab, primary, secondary};
-use iced_material::widget::top_app_bar::{self, action_button, menu_button};
-use iced_material::{Element, Theme};
+use material_iced::widget::search::search;
+use material_iced::widget::side_sheet::side_sheet;
+use material_iced::widget::tabs::{Tab, primary, secondary};
+use material_iced::widget::top_app_bar::{self, action_button, menu_button};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {
@@ -120,7 +120,7 @@ fn navigation_rail_layout_and_labels() {
     );
 }
 
-fn drawer(theme: &Theme) -> iced_material::widget::navigation_drawer::Drawer<Message> {
+fn drawer(theme: &Theme) -> material_iced::widget::navigation_drawer::Drawer<Message> {
     let _ = theme;
     navigation_drawer(
         vec![

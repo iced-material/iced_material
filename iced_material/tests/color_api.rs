@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-3.0-only
 
 use iced::Color;
-use iced_material::color::{
+use material_iced::color::{
     ColorScheme, CustomColor, SchemeOptions, harmonize, matugen, source_from_image,
 };
 
@@ -51,5 +51,5 @@ fn custom_color_harmonizes_toward_source() {
     let red = Color::from_rgb8(0xFF, 0x00, 0x00);
     assert_ne!(harmonize(red, source), red);
     let group = CustomColor::new(red, source, true, false);
-    assert!(iced_material::color::contrast_ratio(group.on_color, group.color) >= 4.5);
+    assert!(material_iced::color::contrast_ratio(group.on_color, group.color) >= 4.5);
 }

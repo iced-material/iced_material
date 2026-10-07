@@ -5,11 +5,11 @@ mod common;
 use common::{Harness, distance, rgb};
 use iced::widget::container;
 use iced::{Point, Size};
-use iced_material::draw::text::Label;
-use iced_material::icon::symbol;
-use iced_material::widget::fab::{self, Color};
-use iced_material::widget::pressable::Status;
-use iced_material::{Element, Theme};
+use material_iced::draw::text::Label;
+use material_iced::icon::symbol;
+use material_iced::widget::fab::{self, Color};
+use material_iced::widget::pressable::Status;
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

@@ -10,7 +10,7 @@ use iced::advanced::renderer::{Headless, Style};
 use iced::advanced::widget::{self, Operation, operation::Focusable};
 use iced::time::Instant;
 use iced::{Color, Event, Font, Pixels, Point, Rectangle, Size, keyboard, mouse, window};
-use iced_material::{Element, Theme};
+use material_iced::{Element, Theme};
 use iced_runtime::user_interface::{Cache, UserInterface};
 
 static FONTS: Once = Once::new();

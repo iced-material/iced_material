@@ -8,13 +8,13 @@ use common::{Harness, distance, key, rgb};
 use iced::keyboard::key::Named;
 use iced::widget::container;
 use iced::{Point, Size};
-use iced_material::state::overlay;
-use iced_material::widget::checkbox::{self, Check, Variant, checkbox};
-use iced_material::widget::focus_scope;
-use iced_material::widget::pressable::Status;
-use iced_material::widget::radio::{self, radio_group};
-use iced_material::widget::switch::{self, switch};
-use iced_material::{Element, Theme};
+use material_iced::state::overlay;
+use material_iced::widget::checkbox::{self, Check, Variant, checkbox};
+use material_iced::widget::focus_scope;
+use material_iced::widget::pressable::Status;
+use material_iced::widget::radio::{self, radio_group};
+use material_iced::widget::switch::{self, switch};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

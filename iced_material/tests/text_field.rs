@@ -7,11 +7,11 @@ use std::time::Duration;
 use common::{Harness, distance, ink, rgb, type_text};
 use iced::widget::{container, text_editor};
 use iced::{Length, Point, Rectangle, Size};
-use iced_material::icon::symbol;
-use iced_material::widget::focus_scope;
-use iced_material::widget::pressable::Status;
-use iced_material::widget::text_field::{self, Kind, Variant};
-use iced_material::{Element, Theme};
+use material_iced::icon::symbol;
+use material_iced::widget::focus_scope;
+use material_iced::widget::pressable::Status;
+use material_iced::widget::text_field::{self, Kind, Variant};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

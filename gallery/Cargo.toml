@@ -9,7 +9,7 @@ publish = false
 
 [dependencies]
 iced = { workspace = true, features = ["wgpu", "tiny-skia", "crisp", "web-colors", "thread-pool", "linux-theme-detection", "x11", "wayland", "advanced"] }
-iced_material = { path = "../iced_material", features = ["roboto"] }
+material-iced = { path = "../iced_material", features = ["roboto"] }
 
 [dev-dependencies]
 iced = { workspace = true, features = ["advanced", "tiny-skia"] }

@@ -5,10 +5,10 @@ mod common;
 use common::{Harness, rgb, run};
 use iced::widget::{Space, container};
 use iced::{Color, Length, Point, Size};
-use iced_material::icon::symbol;
-use iced_material::layout::{WidthClass, adaptive, feed, list_detail, scaffold, supporting_pane};
-use iced_material::widget::navigation::Destination;
-use iced_material::{Element, Theme};
+use material_iced::icon::symbol;
+use material_iced::layout::{WidthClass, adaptive, feed, list_detail, scaffold, supporting_pane};
+use material_iced::widget::navigation::Destination;
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

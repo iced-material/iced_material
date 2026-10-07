@@ -8,13 +8,13 @@ use common::{Harness, distance, ink, key, rgb, run, solid};
 use iced::keyboard::key::Named;
 use iced::widget::{container, space};
 use iced::{Length, Point, Rectangle, Size};
-use iced_material::state::overlay;
-use iced_material::widget::dialog::{dialog, modal};
-use iced_material::widget::menu::{self, item, menu as menu_widget};
-use iced_material::widget::select;
-use iced_material::widget::snackbar::snackbar;
-use iced_material::widget::tooltip;
-use iced_material::{Element, Theme};
+use material_iced::state::overlay;
+use material_iced::widget::dialog::{dialog, modal};
+use material_iced::widget::menu::{self, item, menu as menu_widget};
+use material_iced::widget::select;
+use material_iced::widget::snackbar::snackbar;
+use material_iced::widget::tooltip;
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

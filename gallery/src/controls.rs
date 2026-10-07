@@ -2,9 +2,9 @@
 
 use iced::widget::{column, container, mouse_area, row, text, text_input};
 use iced::{Color, Element, Length, mouse};
-use iced_material::Theme;
-use iced_material::color::{SpecVersion, Variant};
-use iced_material::typography::TypeStyle;
+use material_iced::Theme;
+use material_iced::color::{SpecVersion, Variant};
+use material_iced::typography::TypeStyle;
 
 use crate::{Gallery, Message, Mode, Page};
 

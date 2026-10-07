@@ -23,7 +23,7 @@ A Material Design 3 widget and theming library for the Iced GUI toolkit.
 cargo build
 cargo test
 cargo run -p gallery
-cargo run -p iced_material --example minimal --features roboto
+cargo run -p material-iced --example minimal --features roboto
 ```
 
 `cargo test` renders widgets headless on `tiny-skia`. Setting `ICED_MATERIAL_BACKEND=wgpu` runs the same tests on `wgpu`.
@@ -35,7 +35,7 @@ Add the crate and Iced to `Cargo.toml`. The `roboto` feature embeds the Roboto f
 ```toml
 [dependencies]
 iced = "0.14"
-iced_material = { path = "../iced_material", features = ["roboto"] }
+material-iced = { path = "../iced_material", features = ["roboto"] }
 ```
 
 Every widget takes the theme when it is built. Wrap the root of a view in `focus_scope` to get Tab and Shift+Tab traversal.
@@ -43,8 +43,8 @@ Every widget takes the theme when it is built. Wrap the root of a view in `focus
 ```rust
 use iced::widget::{column, container, text};
 use iced::{Alignment, Font, Length};
-use iced_material::widget::{button, focus_scope};
-use iced_material::{Element, Theme, font};
+use material_iced::widget::{button, focus_scope};
+use material_iced::{Element, Theme, font};
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -113,8 +113,8 @@ A theme is built from a source color:
 
 ```rust
 use iced::Color;
-use iced_material::Theme;
-use iced_material::color::{SchemeOptions, Variant};
+use material_iced::Theme;
+use material_iced::color::{SchemeOptions, Variant};
 
 let theme = Theme::new(SchemeOptions {
     source: Color::from_rgb8(0x1B, 0x6D, 0x00),

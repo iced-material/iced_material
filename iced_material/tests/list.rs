@@ -5,11 +5,11 @@ mod common;
 use common::{Harness, distance, rgb};
 use iced::widget::{column, container};
 use iced::{Length, Point, Size};
-use iced_material::icon::symbol;
-use iced_material::widget::checkbox::checkbox;
-use iced_material::widget::focus_scope;
-use iced_material::widget::list::{Leading, Trailing, list_item};
-use iced_material::{Element, Theme};
+use material_iced::icon::symbol;
+use material_iced::widget::checkbox::checkbox;
+use material_iced::widget::focus_scope;
+use material_iced::widget::list::{Leading, Trailing, list_item};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

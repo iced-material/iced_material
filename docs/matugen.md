@@ -1,6 +1,6 @@
 # Color scheme files
 
-A color scheme can be loaded from the JSON that Matugen prints, so that a wallpaper-derived palette drives the whole interface. The format is read by `iced_material::color::matugen::import` and written by `matugen::export`.
+A color scheme can be loaded from the JSON that Matugen prints, so that a wallpaper-derived palette drives the whole interface. The format is read by `material_iced::color::matugen::import` and written by `matugen::export`.
 
 ## Layout
 
@@ -35,11 +35,11 @@ The scheme of this library has two roles that Matugen does not have, `success` a
 ## Use
 
 ```rust
-use iced_material::color::matugen;
+use material_iced::color::matugen;
 
 let json = std::fs::read_to_string("colors.json")?;
 let (light, dark) = matugen::import(&json)?;
-let theme = iced_material::Theme::with_colors(if want_dark { dark } else { light }, want_dark);
+let theme = material_iced::Theme::with_colors(if want_dark { dark } else { light }, want_dark);
 ```
 
 `matugen::export(&light, &dark, dark_is_default)` writes the two schemes in the same layout. The gallery loads a file from the path typed in the side panel and switches between the loaded schemes with the same animated transition as between generated ones.

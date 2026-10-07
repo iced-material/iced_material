@@ -11,7 +11,7 @@
 ```
 cargo build
 cargo run -p gallery
-cargo run -p iced_material --example minimal --features roboto
+cargo run -p material-iced --example minimal --features roboto
 ```
 
 The gallery has one page per group of components. It is the quickest way to look at a change.

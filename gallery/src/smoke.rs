@@ -43,7 +43,7 @@ const PAGES: [Page; 16] = [
 
 impl Rig {
     fn new(size: Size) -> Rig {
-        for bytes in iced_material::font::ROBOTO {
+        for bytes in material_iced::font::ROBOTO {
             iced::advanced::graphics::text::font_system()
                 .write()
                 .unwrap()
@@ -458,28 +458,28 @@ fn dump_screenshots() {
     gallery.update(Message::Demo(DemoEvent::TimeDialog(true)));
     shot(&mut rig, &mut gallery, "time-hours");
     gallery.update(Message::Demo(DemoEvent::Time(
-        iced_material::widget::time_picker::Event::HourDone(10),
+        material_iced::widget::time_picker::Event::HourDone(10),
     )));
     gallery.update(Message::Demo(DemoEvent::Time(
-        iced_material::widget::time_picker::Event::Minute(21),
+        material_iced::widget::time_picker::Event::Minute(21),
     )));
     shot(&mut rig, &mut gallery, "time-minutes");
     gallery.update(Message::Demo(DemoEvent::Time(
-        iced_material::widget::time_picker::Event::ToggleInput,
+        material_iced::widget::time_picker::Event::ToggleInput,
     )));
     shot(&mut rig, &mut gallery, "time-input");
     gallery.update(Message::Demo(DemoEvent::TimeDialog(false)));
     gallery.update(Message::Demo(DemoEvent::DateDialog(true)));
     shot(&mut rig, &mut gallery, "date-modal");
     gallery.update(Message::Demo(DemoEvent::Date(
-        iced_material::widget::date_picker::Event::ToggleYears,
+        material_iced::widget::date_picker::Event::ToggleYears,
     )));
     shot(&mut rig, &mut gallery, "date-years");
     gallery.update(Message::Demo(DemoEvent::Date(
-        iced_material::widget::date_picker::Event::ToggleYears,
+        material_iced::widget::date_picker::Event::ToggleYears,
     )));
     gallery.update(Message::Demo(DemoEvent::Date(
-        iced_material::widget::date_picker::Event::ToggleInput,
+        material_iced::widget::date_picker::Event::ToggleInput,
     )));
     shot(&mut rig, &mut gallery, "date-input");
 }

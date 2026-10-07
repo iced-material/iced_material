@@ -8,10 +8,10 @@ use common::{Harness, distance, key, rgb};
 use iced::keyboard::key::Named;
 use iced::widget::container;
 use iced::{Point, Size};
-use iced_material::draw::text::Label;
-use iced_material::widget::focus_scope;
-use iced_material::widget::segmented_button::{Segment, segmented_button};
-use iced_material::{Element, Theme};
+use material_iced::draw::text::Label;
+use material_iced::widget::focus_scope;
+use material_iced::widget::segmented_button::{Segment, segmented_button};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

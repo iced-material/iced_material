@@ -7,9 +7,9 @@ use std::time::Duration;
 use common::{Harness, Image, distance, rgb};
 use iced::widget::{column, container, row};
 use iced::{Length, Point, Size};
-use iced_material::icon::symbol;
-use iced_material::widget::{button, card, fab, slider::slider, text_field};
-use iced_material::{Element, Theme};
+use material_iced::icon::symbol;
+use material_iced::widget::{button, card, fab, slider::slider, text_field};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone)]
 enum Message {

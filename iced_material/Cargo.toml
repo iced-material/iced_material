@@ -1,5 +1,5 @@
 [package]
-name = "iced_material"
+name = "material-iced"
 description = "Material Design 3 widgets and theming for Iced"
 version.workspace = true
 edition.workspace = true

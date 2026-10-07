@@ -8,10 +8,10 @@ use common::{Harness, distance, key, rgb, run, type_text};
 use iced::keyboard::key::Named;
 use iced::widget::Space;
 use iced::{Length, Point, Size};
-use iced_material::calendar::Date;
-use iced_material::widget::date_picker::{self, Event as DateEvent, Format, ViewMode};
-use iced_material::widget::time_picker::{self, Event as TimeEvent, Select, time_picker};
-use iced_material::{Element, Theme};
+use material_iced::calendar::Date;
+use material_iced::widget::date_picker::{self, Event as DateEvent, Format, ViewMode};
+use material_iced::widget::time_picker::{self, Event as TimeEvent, Select, time_picker};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

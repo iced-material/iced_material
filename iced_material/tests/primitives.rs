@@ -10,10 +10,10 @@ use iced::advanced::renderer;
 use iced::advanced::widget::{Tree, Widget};
 use iced::time::Instant;
 use iced::{Length, Point, Rectangle, Renderer, Size, mouse};
-use iced_material::draw::ripple::Ripple;
-use iced_material::draw::text::Label;
-use iced_material::draw::{focus_ring, shadow, surface};
-use iced_material::{Element, Theme};
+use material_iced::draw::ripple::Ripple;
+use material_iced::draw::text::Label;
+use material_iced::draw::{focus_ring, shadow, surface};
+use material_iced::{Element, Theme};
 
 const BOUNDS: Rectangle = Rectangle {
     x: 40.0,
@@ -114,7 +114,7 @@ fn ripple_is_clipped_to_rounded_shape() {
             &theme,
             scale,
         );
-        let pressed = iced_material::state::overlay(
+        let pressed = material_iced::state::overlay(
             theme.colors.primary,
             theme.colors.on_primary,
             theme.state.pressed,
@@ -222,7 +222,7 @@ fn label_adds_tracking_after_each_grapheme() {
     let a = tracked.update("Button", style);
     let b = plain.update(
         "Button",
-        iced_material::typography::TypeStyle {
+        material_iced::typography::TypeStyle {
             tracking: 0.0,
             ..style
         },

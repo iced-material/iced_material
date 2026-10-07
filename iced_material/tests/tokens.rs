@@ -4,14 +4,14 @@ use std::time::Duration;
 
 use iced::font::{Family, Weight};
 use iced::{Color, Size};
-use iced_material::color::{
+use material_iced::color::{
     ColorScheme, Role, SchemeOptions, SpecVersion, Variant, contrast_ratio,
 };
-use iced_material::elevation::Elevation;
-use iced_material::motion::{Easing, Motion};
-use iced_material::shape::{Corner, ShapeScale};
-use iced_material::state::{self, Disabled, FocusRing, StateLayers};
-use iced_material::typography::TypeScale;
+use material_iced::elevation::Elevation;
+use material_iced::motion::{Easing, Motion};
+use material_iced::shape::{Corner, ShapeScale};
+use material_iced::state::{self, Disabled, FocusRing, StateLayers};
+use material_iced::typography::TypeScale;
 
 #[test]
 fn type_scale_matches_tokens() {
@@ -48,7 +48,7 @@ fn type_scale_matches_tokens() {
 fn shape_scale_matches_tokens() {
     let s = ShapeScale::default();
     let size = Size::new(100.0, 40.0);
-    let all = |shape: iced_material::shape::Shape| {
+    let all = |shape: material_iced::shape::Shape| {
         let r = shape.radius(size);
         [r.top_left, r.top_right, r.bottom_right, r.bottom_left]
     };

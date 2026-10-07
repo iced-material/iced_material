@@ -5,11 +5,11 @@ use iced::advanced::renderer;
 use iced::advanced::widget::{Tree, Widget};
 use iced::widget::{column, container, row};
 use iced::{Element, Length, Rectangle, Renderer, Size, mouse};
-use iced_material::Theme;
-use iced_material::color::Role;
-use iced_material::draw::{shadow, surface};
-use iced_material::shape::Shape;
-use iced_material::typography::TypeStyle;
+use material_iced::Theme;
+use material_iced::color::Role;
+use material_iced::draw::{shadow, surface};
+use material_iced::shape::Shape;
+use material_iced::typography::TypeStyle;
 
 use crate::Message;
 use crate::controls::styled;

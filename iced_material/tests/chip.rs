@@ -6,13 +6,13 @@ use common::{Harness, key};
 use iced::Size;
 use iced::keyboard::key::Named;
 use iced::widget::container;
-use iced_material::draw::text::Label;
-use iced_material::icon::symbol;
-use iced_material::widget::chip::{self, Kind, Variant};
-use iced_material::widget::chip_set::chip_set;
-use iced_material::widget::focus_scope;
-use iced_material::widget::pressable::Status;
-use iced_material::{Element, Theme};
+use material_iced::draw::text::Label;
+use material_iced::icon::symbol;
+use material_iced::widget::chip::{self, Kind, Variant};
+use material_iced::widget::chip_set::chip_set;
+use material_iced::widget::focus_scope;
+use material_iced::widget::pressable::Status;
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

@@ -8,10 +8,10 @@ use common::{Harness, distance, key, rgb};
 use iced::keyboard::key::Named;
 use iced::widget::container;
 use iced::{Length, Point, Size};
-use iced_material::state::overlay;
-use iced_material::widget::focus_scope;
-use iced_material::widget::slider::{range_slider, slider};
-use iced_material::{Element, Theme};
+use material_iced::state::overlay;
+use material_iced::widget::focus_scope;
+use material_iced::widget::slider::{range_slider, slider};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

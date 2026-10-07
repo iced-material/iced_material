@@ -5,13 +5,13 @@ mod common;
 use common::{Harness, distance, rgb};
 use iced::widget::{column, container, space};
 use iced::{Length, Point, Size};
-use iced_material::draw::text::Label;
-use iced_material::icon::{icon, symbol};
-use iced_material::widget::badge::{self, badged};
-use iced_material::widget::card::{self, Kind};
-use iced_material::widget::divider;
-use iced_material::widget::pressable::Status;
-use iced_material::{Element, Theme};
+use material_iced::draw::text::Label;
+use material_iced::icon::{icon, symbol};
+use material_iced::widget::badge::{self, badged};
+use material_iced::widget::card::{self, Kind};
+use material_iced::widget::divider;
+use material_iced::widget::pressable::Status;
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

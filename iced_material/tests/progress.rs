@@ -7,8 +7,8 @@ use std::time::Duration;
 use common::{Harness, distance, ink, rgb};
 use iced::widget::container;
 use iced::{Length, Point, Rectangle, Size};
-use iced_material::widget::progress::{circular, linear};
-use iced_material::{Element, Theme};
+use material_iced::widget::progress::{circular, linear};
+use material_iced::{Element, Theme};
 
 fn place(content: Element<'static, ()>) -> Element<'static, ()> {
     container(content).padding(20).into()

@@ -8,11 +8,11 @@ use common::{Harness, distance, key, rgb};
 use iced::keyboard::key::Named;
 use iced::widget::container;
 use iced::{Point, Size};
-use iced_material::draw::text::Label;
-use iced_material::icon::symbol;
-use iced_material::state::{alpha, overlay};
-use iced_material::widget::{button, focus_scope};
-use iced_material::{Element, Theme};
+use material_iced::draw::text::Label;
+use material_iced::icon::symbol;
+use material_iced::state::{alpha, overlay};
+use material_iced::widget::{button, focus_scope};
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

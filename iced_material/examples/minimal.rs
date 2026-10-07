@@ -2,8 +2,8 @@
 
 use iced::widget::{column, container, text};
 use iced::{Alignment, Font, Length};
-use iced_material::widget::{button, focus_scope};
-use iced_material::{Element, Theme, font};
+use material_iced::widget::{button, focus_scope};
+use material_iced::{Element, Theme, font};
 
 #[derive(Debug, Clone)]
 enum Message {

@@ -2,38 +2,38 @@
 
 use iced::widget::{column, container, row, space, text, text_editor};
 use iced::{Alignment, Element, Length};
-use iced_material::Theme;
-use iced_material::calendar::Date;
-use iced_material::icon::{icon, symbol};
-use iced_material::layout::{adaptive, feed, list_detail, margins, scaffold};
-use iced_material::widget::badge::{self, badged};
-use iced_material::widget::checkbox::checkbox;
-use iced_material::widget::chip_set::chip_set;
-use iced_material::widget::dialog::{dialog, modal};
-use iced_material::widget::list::{Leading, Trailing, list_item};
-use iced_material::widget::menu::{self, item, menu as menu_widget};
-use iced_material::widget::navigation::{
+use material_iced::Theme;
+use material_iced::calendar::Date;
+use material_iced::icon::{icon, symbol};
+use material_iced::layout::{adaptive, feed, list_detail, margins, scaffold};
+use material_iced::widget::badge::{self, badged};
+use material_iced::widget::checkbox::checkbox;
+use material_iced::widget::chip_set::chip_set;
+use material_iced::widget::dialog::{dialog, modal};
+use material_iced::widget::list::{Leading, Trailing, list_item};
+use material_iced::widget::menu::{self, item, menu as menu_widget};
+use material_iced::widget::navigation::{
     Badge, Destination, Labels, navigation_bar, navigation_rail,
 };
-use iced_material::widget::navigation_drawer::{
+use material_iced::widget::navigation_drawer::{
     DrawerItem, modal_drawer, navigation_drawer, section,
 };
-use iced_material::widget::progress::{circular, linear};
-use iced_material::widget::radio::radio_group;
-use iced_material::widget::search::search;
-use iced_material::widget::segmented_button::{Segment, segmented_button};
-use iced_material::widget::side_sheet::side_sheet;
-use iced_material::widget::slider::{range_slider, slider};
-use iced_material::widget::snackbar::snackbar;
-use iced_material::widget::switch::switch;
-use iced_material::widget::tabs::{self, Tab};
-use iced_material::widget::top_app_bar::{self, action_button, menu_button};
-use iced_material::widget::transition::{
+use material_iced::widget::progress::{circular, linear};
+use material_iced::widget::radio::radio_group;
+use material_iced::widget::search::search;
+use material_iced::widget::segmented_button::{Segment, segmented_button};
+use material_iced::widget::side_sheet::side_sheet;
+use material_iced::widget::slider::{range_slider, slider};
+use material_iced::widget::snackbar::snackbar;
+use material_iced::widget::switch::switch;
+use material_iced::widget::tabs::{self, Tab};
+use material_iced::widget::top_app_bar::{self, action_button, menu_button};
+use material_iced::widget::transition::{
     Axis, container_transform, fade, fade_through, shared_axis,
 };
-use iced_material::widget::{button, card, chip, divider, fab, icon_button};
-use iced_material::widget::{date_picker, time_picker};
-use iced_material::widget::{select, text_field, tooltip};
+use material_iced::widget::{button, card, chip, divider, fab, icon_button};
+use material_iced::widget::{date_picker, time_picker};
+use material_iced::widget::{select, text_field, tooltip};
 
 use crate::Message;
 use crate::controls::styled;

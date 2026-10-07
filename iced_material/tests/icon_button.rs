@@ -7,11 +7,11 @@ use std::time::Duration;
 use common::{Harness, distance, rgb};
 use iced::widget::container;
 use iced::{Point, Size};
-use iced_material::icon::symbol;
-use iced_material::state::overlay;
-use iced_material::widget::icon_button::{self, Toggle};
-use iced_material::widget::pressable::Status;
-use iced_material::{Element, Theme};
+use material_iced::icon::symbol;
+use material_iced::state::overlay;
+use material_iced::widget::icon_button::{self, Toggle};
+use material_iced::widget::pressable::Status;
+use material_iced::{Element, Theme};
 
 #[derive(Debug, Clone, PartialEq)]
 enum Message {

@@ -6,6 +6,12 @@
 
 A Material Design 3 widget and theming library for the Iced GUI toolkit. 
 
+> [!NOTE]
+> **Repository Mirrors**
+>
+> - **git.nuros.org** ([iced_material/iced_material](https://git.nuros.org/iced_material/iced_material)): primary, self-hosted Forgejo instance, accounts restricted to the core team.
+> - **GitHub** ([iced-material/iced_material](https://github.com/iced-material/iced_material)): mirror for external contributors. Issues and Pull Requests opened here are welcome and are reviewed and processed by the core team.
+
 ## Dependencies
 
 - Rust 1.88 or newer, edition 2024.

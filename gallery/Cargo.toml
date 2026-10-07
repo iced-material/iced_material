@@ -1,0 +1,16 @@
+[package]
+name = "gallery"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+iced = { workspace = true, features = ["wgpu", "tiny-skia", "crisp", "web-colors", "thread-pool", "linux-theme-detection", "x11", "wayland", "advanced"] }
+iced_material = { path = "../iced_material", features = ["roboto"] }
+
+[dev-dependencies]
+iced = { workspace = true, features = ["advanced", "tiny-skia"] }
+iced_runtime = "0.14.0"

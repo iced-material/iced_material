@@ -1,6 +1,8 @@
 [package]
 name = "material-iced"
 description = "Material Design 3 widgets and theming for Iced"
+readme = "../README.md"
+repository = "https://git.nuros.org/iced_material/iced_material"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
